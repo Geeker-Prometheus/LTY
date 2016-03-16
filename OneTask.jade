@@ -1,7 +1,8 @@
 doctype html
 html(lang="en")
     head
-        -var sentence = "这是一个很长很长的段落";
+        -var sentence = "这是一个很长很长的段落,";
+        -var sentence2 ="好看的图片";
         meta(http-equiv="content-type",content="text/html;charset=utf-8")
         meta(http-equiv="x-ua-compatible",content="IE=edge,chrome=1")
         meta(content="baidu,task,FE",name="keywords")
@@ -28,14 +29,15 @@ html(lang="en")
                 p
                     span 文章作者 
                     time 文章发表时间
-                p 这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落,
-                    <br/> 换行了<br/> 这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，
+                p #{sentence}#{sentence}#{sentence}#{sentence}#{sentence}#{sentence}
+                    <br/> 换行了<br/> #{sentence}#{sentence}#{sentence}
                     a(href="http://ife.baidu.com") 这里有一个链接到http://ife.baidu.com
-                p  <strong> 这是一个粗体字</strong>
-                    这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落
-                figure
-                    figcaption 好看的图片
+                p  <strong> 这是一个粗体字</strong>#{sentence}#{sentence}#{sentence}
+                mixin figuree
+                    figure
+                    figcaption #{sentence2}
                     img(alt="mouse",src="IMG/mouse.png",title="mouse")
+                +figuree
                 ul
                     li 列表项目一
                     li 列表项目二
@@ -43,18 +45,12 @@ html(lang="en")
                     li 列表项目四
             section
                 h2 图片
-                figure
-                figcaption 好看的图片
-                img(alt="mouse",src="IMG/mouse.png",title="mouse")
-                figure
-                figcaption 好看的图片
-                img(alt="mouse",src="IMG/mouse.png",title="mouse")
-                figure
-                figcaption 好看的图片
-                img(alt="mouse",src="IMG/mouse.png",title="mouse")
-                figure
-                figcaption 好看的图片
-                img(alt="mouse",src="IMG/mouse.png",title="mouse")
+
+                +figuree
+                +figuree
+                +figuree
+                +figuree
+
         article
             section
                 h2 最后一篇文章一级标题
@@ -73,28 +69,16 @@ html(lang="en")
                         th 表头
                         th 表头
                         th 表头
-                    tr
-                        td 表内容单元格
-                        td 表内容单元格
-                        td
-                            a(href="javascript:void(0)") 操作
-                    tr
-                        td 表内容单元格
-                        td 表内容单元格
-                        td
-                            a(href="javascript:void(0)") 操作
-
-                    tr
-                        td 表内容单元格
-                        td 表内容单元格
-                        td
-                            a(href="javascript:void(0)") 操作
-
-                    tr
-                        td 表内容单元格
-                        td 表内容单元格
-                        td
-                            a(href="javascript:void(0)") 操作
+                    mixin trtd
+                        tr
+                            td 表内容单元格
+                            td 表内容单元格
+                            td
+                                a(href="javascript:void(0)") 操作
+                    +trtd
+                    +trtd
+                    +trtd
+                    +trtd  
                     tfoot
                         tr
                             td 总计

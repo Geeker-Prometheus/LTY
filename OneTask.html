@@ -9,15 +9,144 @@
     <title>First Task</title>
   </head>
   <body>
-    <h1>网站一级标题</h1>
-    <ul>
-      <li> <a href="#">导航链接一</a></li>
-      <li><a href="#">导航链接二</a></li>
-      <li><a href="#">导航链接三</a></li>
-      <li> <a href="#">导航链接四</a></li>
-    </ul>
+    <header> 
+      <h1>网站一级标题</h1>
+    </header>
+    <nav>
+      <ul>
+        <li> <a href="#">导航链接一</a></li>
+        <li><a href="#">导航链接二</a></li>
+        <li><a href="#">导航链接三</a></li>
+        <li> <a href="#">导航链接四</a></li>
+      </ul>
+    </nav>
+    <article>
+      <section>        
+        <h3>文章一级标题</h3>
+        <h3>文章二级标题</h3>
+        <p><span>文章作者 </span>
+          <time>文章发表时间</time>
+        </p>
+        <p>
+          这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落,
+          <br/> 换行了<br/> 这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com">这里有一个链接到http://ife.baidu.com</a>
+        </p>
+        <p>
+           <strong> 这是一个粗体字</strong>
+          这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落
+        </p>
+        <figure>
+          <figcaption>好看的图片</figcaption><img alt="mouse" src="IMG/mouse.png" title="mouse">
+        </figure>
+        <ul>
+          <li>列表项目一</li>
+          <li>列表项目二</li>
+          <li>列表项目三</li>
+          <li>列表项目四</li>
+        </ul>
+      </section>
+      <section>
+        <h2>图片</h2>
+        <figure></figure>
+        <figcaption>好看的图片</figcaption><img alt="mouse" src="IMG/mouse.png" title="mouse">
+        <figure></figure>
+        <figcaption>好看的图片</figcaption><img alt="mouse" src="IMG/mouse.png" title="mouse">
+        <figure></figure>
+        <figcaption>好看的图片</figcaption><img alt="mouse" src="IMG/mouse.png" title="mouse">
+        <figure></figure>
+        <figcaption>好看的图片</figcaption><img alt="mouse" src="IMG/mouse.png" title="mouse">
+      </section>
+    </article>
+    <article>
+      <section>
+        <h2>最后一篇文章一级标题</h2>
+        <h3>最后一篇文章二级标题</h3>
+        <p><span>文章作者</span>
+          <time>文章发表时间</time>
+        </p>
+        <ol>
+          <li>排名1</li>
+          <li>排名2</li>
+          <li>排名3</li>
+        </ol>
+        <table border="1">
+          <caption>下面是一个表格表格加了一个border="1"好让你看出是一个表格</caption>
+          <thead></thead>
+          <tr>
+            <th>表头</th>
+            <th>表头</th>
+            <th>表头</th>
+          </tr>
+          <tr>
+            <td>表内容单元格</td>
+            <td>表内容单元格</td>
+            <td><a href="javascript:void(0)">操作</a></td>
+          </tr>
+          <tr>
+            <td>表内容单元格</td>
+            <td>表内容单元格</td>
+            <td><a href="javascript:void(0)">操作</a></td>
+          </tr>
+          <tr>
+            <td>表内容单元格</td>
+            <td>表内容单元格</td>
+            <td><a href="javascript:void(0)">操作</a></td>
+          </tr>
+          <tr>
+            <td>表内容单元格</td>
+            <td>表内容单元格</td>
+            <td><a href="javascript:void(0)">操作</a></td>
+          </tr>
+          <tfoot>
+            <tr>
+              <td>总计</td>
+              <td colspan="2">1000</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+    </article>
+    <aside>
+      <h1>这里以后是一个侧栏，这是侧栏的标题</h1>
+      <form action="">
+        <h1>侧栏注册窗口标题</h1>
+        <div>
+          <label for="e-mail">请输入邮箱地址:</label>
+          <input id="e-mail" placeholder="这是一个文本输入框" type="email">
+          <p>邮箱地址请按要求输入</p>
+        </div>
+        <div> 
+          <label for="password">请输入密码:</label>
+          <input id="password" placeholder="这是一个文本输入框" type="password">
+          <label for="password-repeat">请重复输入密码:</label>
+          <input id="password-repeat" placeholder="这是一个文本输入框" type="password">
+          <p>密码为6-16位英文数字</p>
+        </div>
+        <div>
+          <label>性别:</label>
+          <input checked id="male" name="sex" type="radio" value="male">
+          <label for="male">男</label>
+          <input id="female" name="sex" type="radio" value="female">
+          <label for="female">女</label>
+          <label for="city">城市：</label>
+          <select id="city" name="city">
+            <option selected value="BeiJing">北京</option>
+            <option value="ShangHai">上海</option>
+            <option value="GuangZhou">广州</option>
+          </select>
+          <label>爱好：</label>
+          <input id="sport" name="love" type="checkbox" value="sport">
+          <label for="sport">运动</label>
+          <input id="art" name="love" type="checkbox" value="art">
+          <label for="art">艺术</label>
+          <input id="science" name="love" type="checkbox" value="science">
+          <label for="science">科学</label>
+          <label for="description">个人描述：</label>
+          <textarea name="description" id="description">这是一个多行输入框，输入您的个人描述</textarea></textarea>
+          <input type="submit" value="确认提交">
+        </div>
+      </form>
+    </aside>
+    <footer>版权所有&copy;</footer>
   </body>
-  <h3>文章一级标题</h3>
-  <h3>文章二级标题</h3><abbr>文章作者 文章发表时间</abbr>
-  <p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，</p>
 </html>

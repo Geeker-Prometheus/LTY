@@ -9,17 +9,137 @@ html(lang="en")
         meta(content="Geeker-Prometheus",name="author")
         title First Task
     body
-        h1 网站一级标题
-        ul
-            li 
-              a(href="#") 导航链接一
-            li
-              a(href="#") 导航链接二
-            li
-              a(href="#") 导航链接三
-            li 
-              a(href="#") 导航链接四
-    h3 文章一级标题
-    h3 文章二级标题
-    abbr 文章作者 文章发表时间
-    p 这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，
+        header  
+            h1 网站一级标题
+        nav
+            ul
+                li 
+                  a(href="#") 导航链接一
+                li
+                  a(href="#") 导航链接二
+                li
+                  a(href="#") 导航链接三
+                li 
+                  a(href="#") 导航链接四
+        article
+            section         
+                h3 文章一级标题
+                h3 文章二级标题
+                p
+                    span 文章作者 
+                    time 文章发表时间
+                p 这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落,
+                    <br/> 换行了<br/> 这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，
+                    a(href="http://ife.baidu.com") 这里有一个链接到http://ife.baidu.com
+                p  <strong> 这是一个粗体字</strong>
+                    这是一个很长很长的段落,这是一个很长很长的段落,这是一个很长很长的段落
+                figure
+                    figcaption 好看的图片
+                    img(alt="mouse",src="IMG/mouse.png",title="mouse")
+                ul
+                    li 列表项目一
+                    li 列表项目二
+                    li 列表项目三
+                    li 列表项目四
+            section
+                h2 图片
+                figure
+                figcaption 好看的图片
+                img(alt="mouse",src="IMG/mouse.png",title="mouse")
+                figure
+                figcaption 好看的图片
+                img(alt="mouse",src="IMG/mouse.png",title="mouse")
+                figure
+                figcaption 好看的图片
+                img(alt="mouse",src="IMG/mouse.png",title="mouse")
+                figure
+                figcaption 好看的图片
+                img(alt="mouse",src="IMG/mouse.png",title="mouse")
+        article
+            section
+                h2 最后一篇文章一级标题
+                h3 最后一篇文章二级标题
+                p
+                    span 文章作者
+                    time 文章发表时间
+                ol
+                    li 排名1
+                    li 排名2
+                    li 排名3
+                table(border="1")
+                    caption 下面是一个表格表格加了一个border="1"好让你看出是一个表格
+                    thead
+                    tr
+                        th 表头
+                        th 表头
+                        th 表头
+                    tr
+                        td 表内容单元格
+                        td 表内容单元格
+                        td
+                            a(href="javascript:void(0)") 操作
+                    tr
+                        td 表内容单元格
+                        td 表内容单元格
+                        td
+                            a(href="javascript:void(0)") 操作
+
+                    tr
+                        td 表内容单元格
+                        td 表内容单元格
+                        td
+                            a(href="javascript:void(0)") 操作
+
+                    tr
+                        td 表内容单元格
+                        td 表内容单元格
+                        td
+                            a(href="javascript:void(0)") 操作
+                    tfoot
+                        tr
+                            td 总计
+                            td(colspan="2") 1000
+        aside
+            h1 这里以后是一个侧栏，这是侧栏的标题
+            form(action="")
+                h1 侧栏注册窗口标题
+                div
+                    label(for="e-mail") 请输入邮箱地址:
+                    input(id="e-mail",placeholder="这是一个文本输入框",type="email")
+                    p 邮箱地址请按要求输入
+                div 
+                    label(for="password") 请输入密码:
+                    input(id="password",placeholder="这是一个文本输入框",type="password")
+                    label(for="password-repeat") 请重复输入密码:
+                    input(id="password-repeat",placeholder="这是一个文本输入框",type="password")
+                    p 密码为6-16位英文数字
+                div
+                    label 性别:
+                    input(checked,id="male",name="sex",type="radio",value="male")
+                    label(for="male") 男
+                    input(id="female",name="sex",type="radio",value="female")
+                    label(for="female") 女
+                    label(for="city") 城市：
+                    select(id="city",name="city")
+                        option(selected value="BeiJing") 北京
+                        option(value="ShangHai") 上海
+                        option(value="GuangZhou") 广州
+                    label 爱好：
+                    input(id="sport",name="love",type="checkbox",value="sport")
+                    label(for="sport") 运动
+                    input(id="art",name="love",type="checkbox",value="art")
+                    label(for="art") 艺术
+                    input(id="science",name="love",type="checkbox",value="science")
+                    label(for="science") 科学
+                    label(for="description") 个人描述：
+                    textarea(name="description",id="description") 这是一个多行输入框，输入您的个人描述</textarea>
+                    input(type="submit",value="确认提交")
+        footer 版权所有&copy;
+
+
+
+
+                
+
+
+

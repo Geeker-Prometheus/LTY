@@ -47,7 +47,7 @@ nav ul li a:hover {
   background-color: white;
   display: block;
   box-shadow: 2px -2px 10px white;
-  height: 630px;
+  height: 660px;
 }
 .SectionTwo {
   width: 94%;
@@ -63,7 +63,7 @@ nav ul li a:hover {
   background-color: white;
   display: block;
   box-shadow: 2px -2px 10px white;
-  height: 450px;
+  height: 480px;
 }
 .SectionAside {
   width: 94%;
@@ -71,7 +71,7 @@ nav ul li a:hover {
   background-color: white;
   display: block;
   box-shadow: 2px -2px 10px white;
-  height: 400px;
+  height: 450px;
 }
 .footer {
   width: 100%;
@@ -132,7 +132,8 @@ article table caption {
   margin: 20px;
 }
 article table th {
-  background-color: gray;
+  background-color: black;
+  color: white;
 }
 article table td:hover {
   background-color: gray;
@@ -164,7 +165,12 @@ aside table caption {
   height: 100px;
 }
 .submit {
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
   font-size: 24px;
+  background-color: #29a5ff;
+  width: 200px;
 }
 .left {
   text-align: right;

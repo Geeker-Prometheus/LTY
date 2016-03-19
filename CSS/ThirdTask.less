@@ -1,0 +1,64 @@
+.team{
+  background-color: #999;
+  height: auto;
+  margin: 20px 20px;
+  overflow: auto;
+  img{
+    .img();
+  }
+}
+.border(){
+  border: 1px solid #999;
+  background-color: white;
+}
+.img(@number:80px){
+    width: @number;
+    height: @number;
+}
+.teamleft{
+  .border();
+  width: 170px;
+  height: 80px;
+  margin: 20px 20px;
+  padding: 20px 20px;
+  float: left;
+}
+.ImgTeam{
+  width: 120px;
+  float: left;
+
+}
+.teamName{
+  .img();
+  float: right;
+
+}
+.teammiddle{
+  .border();
+  margin-left: 250px;
+  margin-top: 20px;
+  margin-right: 160px;
+
+
+}
+
+.teamright{
+  .border();
+  width: 120px;
+  float: right;
+  margin: 20px 20px;
+   img{
+     margin: 20px 20px 0px;
+     box-shadow: 2px 2px 20px gray;
+   }
+  img:last-child{
+    margin-bottom: 20px;
+  }
+
+
+}
+.clearfix:after {
+  display: table;
+  clear: both;
+  content: ' ';
+}
